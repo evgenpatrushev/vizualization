@@ -39,10 +39,10 @@ for keys in sorted(dict_count.keys()):
 
 dates = [str(key)[:10] for key in sorted(dict_count.keys())]
 
-order_date_prices = go.Scatter(
+dates_count = go.Scatter(
     x=dates,
     y=address_count[1:],
     mode='lines+markers'
 )
-data = [order_date_prices]
+data = [dates_count]
 py.plot(data)
